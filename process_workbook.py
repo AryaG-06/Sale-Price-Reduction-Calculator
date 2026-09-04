@@ -5,7 +5,7 @@ def process_workbook(filename, percentage):
     wb= xl.load_workbook(filename)
     sheet= wb['Sheet1']
 
-    for row in range(2,sheet.max_row+1):
+    for row in range(3,sheet.max_row+1):
         cell = sheet.cell(row, 3)
         corrected_price = (1-percentage/100)*cell.value
         new_cell= sheet.cell(row, 4)
