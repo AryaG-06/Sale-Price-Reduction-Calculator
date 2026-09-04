@@ -20,4 +20,4 @@ def process_workbook(filename, percentage):
 
 
 percent=int(input("Enter Price Reduction Percentage: "))
-process_workbook("transactions.xlsx", percent)
+process_workbook("SalesList.xlsx", percent)
