@@ -12,7 +12,7 @@ def process_workbook(filename, percentage):
         new_cell.value= corrected_price
         new_cell_title=sheet.cell(1, 4)
         new_cell_title.value = 'Corrected Price'
-    values= Reference(sheet, min_row=2, max_row=sheet.max_row, min_col=4, max_col=4)
+    values= Reference(sheet, min_row=3, max_row=sheet.max_row, min_col=4, max_col=4)
     chart=BarChart()
     chart.add_data(values)
     sheet.add_chart(chart, 'e2')
